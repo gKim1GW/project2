@@ -72,7 +72,7 @@ def sub_pareto(pts):
     return L2 + R
 
 
-def get_time(n, reps=99):   # Run the function 100 times and return the median value
+def get_time(n, reps=99):   # Run the function 99 times and return the median value
     pts = make_points(n)    
     times = []
     for _ in range(reps):   
@@ -94,3 +94,4 @@ if __name__ == "__main__":
     # pts = make_points(100)
     # result = pareto_d_and_c(pts)
     # print(result)
+
