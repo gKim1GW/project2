@@ -31,14 +31,14 @@ def pareto_scan(sorted_array):
     return result
 
 
-##### Divide & Conquer : STEP1(Sort) #####
+##### Divide & Conquer : STEP1(Sort) mentioned report #####
 def pareto_d_and_c(points):
     if not points:
         return []
     pts = sorted(points)  # Sort the points in ascending order of x
     return sub_pareto(pts)
 
-##### Divide & Conquer SETP2(Divide), SETP3(Conquer), SETP4(Merge)#####
+##### Divide & Conquer SETP2(Divide), SETP3(Conquer), SETP4(Merge) mentioned report #####
 def sub_pareto(pts): 
     n = len(pts)
 
@@ -94,4 +94,5 @@ if __name__ == "__main__":
     # pts = make_points(100)
     # result = pareto_d_and_c(pts)
     # print(result)
+
 
